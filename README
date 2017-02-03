@@ -1,0 +1,11 @@
+# mame adult rom detector
+
+ok, as many of you, I found out my DIY cabinet was full of adult, casino and majohng games; it's bad enough that we have four thousand games to browse to clean them out if we want a child-proof cabinet, so I decided to find out programmatically which of the roms should be kept out of the collection
+
+I found online this database of ROMS-except-casino-adult-mahjong: http://www.hyperspin-fe.com/files/file/7882-mame-hyperbase-database-official/ (needs registering), which is an XML file of ROM descriptions, without unwanted roms
+
+so I just hacked a python script to get the list of filenames (MAME ROMS) in a directory which are NOT in that database
+
+feel free to use it as you want (I just modified it to get a bash script file with "rm file.zip" to wipe them out of my recalbox setup); of course, you could have false positives and mark more roms than you wanted, but... I think you will still have enough games for a lifetime :) :)
+
+remember to modify it with the path to the XML database downloaded from hyperspin-fe.com and the path to your MAME roms folder
